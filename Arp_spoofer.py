@@ -4,6 +4,8 @@ import sys
 import scapy.all as scapy
 from termcolor import colored
 
+print(colored"\n\t\t\t\t\t\t\t\tKRONOS ARP-SPOOFER", "white"))
+
 def get_mac(ip):
     arp_request = scapy.ARP(pdst=ip)
     broadcast = scapy.Ether("ff:ff:ff:ff:ff:ff")
