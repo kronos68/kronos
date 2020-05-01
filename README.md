@@ -14,4 +14,4 @@ Usage:
     
         echo 1 > /proc/sys/net/ipv4/ip_forward
             
-    - To stop the program just hit CTRL + C , and the ARP Tables in the victims device will be restored
+    - To stop the program just hit CTRL + C , and the ARP Tables in the victims device will be restored.
