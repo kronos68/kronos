@@ -5,7 +5,7 @@ Usage:
     - pip install -r requirements.txt
     
     
-    - sudo chmod +x Arp_spoofer.py
+    - sudo chmod +x *
     
     
     - sudo python2 Arp_spoofer.py
