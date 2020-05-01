@@ -22,8 +22,8 @@ def restore(destination_ip, source_ip):
     packet = scapy.ARP(op=2, pdst=destination_ip, hwdst=destination_mac, psrc=source_ip, hwsrc=source_mac)
     scapy.send(packet, count=6, verbose=False)
 
-target_ip = raw_input("target_ip >>> ")
-gateway = raw_input("gateway >>> ")
+target_ip = raw_input(colored("\n\ntarget_ip >>> ", "blue"))
+gateway = raw_input(colored("\n\ngateway >>> ", "blue"))
 
 try:
     packet_counter = 0
