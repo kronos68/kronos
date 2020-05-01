@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python2
 
 import scapy.all as scapy
 from scapy.layers import http
@@ -19,6 +19,6 @@ def process_sniffed_packet(packet):
                     print(colored("Possible username/password >>> " + str(load), "blue"))
                     break
 
-interface = raw_input(colored("Enter Interface >>> ", "white"))
+interface = raw_input(colored("\n\nEnter Interface >>> ", "white"))
 
 sniffer(interface)
