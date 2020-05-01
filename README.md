@@ -32,6 +32,8 @@ Usage:
     
         - sudo python2 sniffer.py
         
+        - interface >>> wlan0 // eth0 // ensp03.
+        
         
         - Enter the Interface, the interface might differ from different linux distros, for windows, you can use the name of your
         
