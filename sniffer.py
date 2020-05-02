@@ -4,7 +4,7 @@ import scapy.all as scapy
 from scapy.layers import http
 from termcolor import colored
 
-print(colored"\n\t\t\t\t\t\t\t\tKRONOS-SNIFFER", "blue"))
+print(colored("\n\t\t\t\t\t\t\t\tKRONOS-SNIFFER", "blue"))
 
 def sniffer(interface):
     scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet)
