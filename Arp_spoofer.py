@@ -3,6 +3,7 @@
 import sys
 import scapy.all as scapy
 from termcolor import colored
+import time
 
 print(colored("\n\t\t\t\t\t\t\t\tKRONOS ARP-SPOOFER", "white"))
 
@@ -36,6 +37,7 @@ try:
             packet_counter = packet_counter + 2
             print("\rpackets sent : " + str(packet_counter)),
             sys.stdout.flush()
+            time.sleep(2)
         except Exception:
             continue
 except KeyboardInterrupt:
