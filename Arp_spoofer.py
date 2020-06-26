@@ -27,6 +27,7 @@ def restore(destination_ip, source_ip):
 
 target_ip = raw_input(colored("\n\ntarget_ip >>> ", "blue"))
 gateway = raw_input(colored("\n\ngateway >>> ", "blue"))
+print("\n\n")
 
 try:
     packet_counter = 0
@@ -38,7 +39,7 @@ try:
             print("\rpackets sent : " + str(packet_counter)),
             sys.stdout.flush()
             time.sleep(2)
-        except Exception:
+        except IndexError:
             continue
 except KeyboardInterrupt:
     print(colored("\n\n\t\t[+]Ctrl + C detected ...quitting and ressetting ARP Tables", "red"))
