@@ -5,10 +5,10 @@ Usage:
     - pip install -r requirements.txt
     
     
-    - sudo chmod +x *
+    - chmod +x *
     
     
-    - sudo python2 Arp_spoofer.py
+    - sudo python3 Arp_spoofer.py
     
     
        eg : target_ip >>> 192.168.43.83 // 192.168.10.32
@@ -17,6 +17,7 @@ Usage:
             
     - don't forget to set your ARP tables.
     
+        sudo su
     
         echo 1 > /proc/sys/net/ipv4/ip_forward
             
@@ -30,7 +31,7 @@ Usage:
     Usage:
     
     
-        - sudo python2 sniffer.py
+        - sudo python3 sniffer.py
         
         - interface >>> wlan0 // eth0 // ensp03 // wlp3s0b1
         
