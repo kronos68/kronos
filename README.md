@@ -8,7 +8,7 @@ Usage:
     - chmod +x *
     
     
-    - sudo python3 Arp_spoofer.py
+    - sudo ./Arp_spoofer.py
     
     
        eg : target_ip >>> 192.168.43.83 // 192.168.10.32
@@ -31,7 +31,7 @@ Usage:
     Usage:
     
     
-        - sudo python3 sniffer.py
+        - sudo ./sniffer.py
         
         - interface >>> wlan0 // eth0 // ensp03 // wlp3s0b1
         
