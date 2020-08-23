@@ -1,5 +1,3 @@
-Tested on Kali linux, Parrot Os and Linux Mint, Can be used on Windows but you will have to install the Python-Interpreter and winpcap.exe.
-
 Usage:
 
     - pip install -r requirements.txt
