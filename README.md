@@ -9,8 +9,8 @@ Usage:
     - sudo ./Arp_spoofer.py
     
     
-       eg : target_ip >>> 192.168.43.83 // 192.168.10.32
-            gateway >>> 192.168.43.1    // 192.168.10.1
+       eg : target_ip >>> 192.168.43.83
+            gateway >>> 192.168.43.1  
             
             
     - don't forget to set your ARP tables.
