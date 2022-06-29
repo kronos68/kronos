@@ -15,7 +15,7 @@ Usage:
             
     - don't forget to set your ARP tables.
     
-        sudo su
+        su
     
         echo 1 > /proc/sys/net/ipv4/ip_forward
             
